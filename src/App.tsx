@@ -3,7 +3,7 @@ import WorkoutCard from './components/WorkoutCard';
 import BackgroundSelector from './components/BackgroundSelector';
 import ShareButton from './components/ShareButton';
 import BackgroundPattern from './components/BackgroundPattern';
-import ScalingControl from './components/ScalingControl';
+
 
 function App() {
   const [selectedBackground, setSelectedBackground] = useState('blue');
@@ -36,7 +36,6 @@ function App() {
           className="pixel6-background-selector"
         />
         <ShareButton className="pixel6-share-button" />
-        <ScalingControl value={scalingFactor} onChange={setScalingFactor} />
       </div>
     </div>
   );
