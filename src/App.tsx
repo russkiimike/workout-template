@@ -8,7 +8,7 @@ import ScalingControl from './components/ScalingControl';
 function App() {
   const [selectedBackground, setSelectedBackground] = useState('blue');
   const [scalingFactor, setScalingFactor] = useState(1);
-  const gify = 'https://i.giphy.com/media/nxi00AClHx3ORJQn6y/giphy.gif';
+  const gify = 'https://i.giphy.com/media/LCaswiXhSmUb9aV4dV/giphy.gif';
 
   return (
     <div 
