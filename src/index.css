@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+body {
+  @apply bg-gray-900;
+}
+
+/* Custom styles for Pixel 6 resolution */
+@media (max-width: 1080px) and (min-height: 2400px) {
+  html {
+    font-size: calc(18px * var(--scaling-factor, 1));
+  }
+
+  .pixel6-container {
+    @apply py-8 px-6;
+  }
+
+  .pixel6-workout-card {
+    @apply mb-8;
+  }
+
+  .pixel6-background-selector {
+    @apply mt-6;
+  }
+
+  .pixel6-share-button {
+    @apply mt-6;
+  }
+}
+
+/* Apply scaling factor to all elements */
+* {
+  transform: scale(var(--scaling-factor, 1));
+  transform-origin: center;
+}
